@@ -4,7 +4,7 @@ import "./foodSection.css";
 import {TransitionGroup} from 'react-transition-group';
 import axios from 'axios';
 
-class FoodSectionComponent extends Component {
+class AdminSectionComponent extends Component {
     state = {
         data: null,
       };
@@ -52,6 +52,6 @@ class FoodSectionComponent extends Component {
 }
 
 
-export default FoodSectionComponent;
+export default AdminSectionComponent;
 
 

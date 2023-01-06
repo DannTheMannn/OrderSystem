@@ -5,8 +5,8 @@ import { BrowserRouter as Router, Routes , Route } from "react-router-dom";
 import "./index.css";
 import "bootstrap/dist/css/bootstrap.css";
 import TabMenu from "./components/tabmenu";
-import FoodSectionComponent from "./components/admin/foodSection";
-import CartComponent from "./components/user/cartComponent";
+import AdminSectionComponent from "./components/admin/adminSection";
+import FoodComponent from "./components/user/foodComponent";
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -15,8 +15,8 @@ root.render(
     <Router>
       <TabMenu />
       <Routes>
-        <Route path="/about" element={<FoodSectionComponent/>} />
-        <Route path="/service" element={<CartComponent/>} />  
+        <Route path="/about" element={<AdminSectionComponent/>} />
+        <Route path="/service" element={<FoodComponent/>} />  
         <Route
             path="*"
             element={
